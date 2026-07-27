@@ -1,8 +1,8 @@
 {
-  "name": "full-masked-diffusion",
+  "name": "no-progressive-curriculum",
   "model_type": "diffusion",
   "collaborative_tokens": true,
-  "progressive_curriculum": true,
+  "progressive_curriculum": false,
   "stability_voting": true,
   "sampling_steps": 3,
   "seeds": [0, 1],
