@@ -12,7 +12,7 @@ Read the tutorial-style [detailed report](reports/dlmrec-reproduction/report.md)
 
 ## Compute and provenance
 
-All scientific results are fresh post-cutoff OpenResearch **Kubernetes** runs on **NVIDIA RTX PRO 6000 Blackwell Server Edition** GPUs. Each successful job used two GPUs for two concurrent seeds; peak concurrency was **16 GPUs** and the campaign’s actual end-to-end wall time was **0.13 hours**. The fixed command below is copied verbatim from `orx exp status`. One shell-quoting scout failed before Python and contributes no evidence; accidental same-seed duplicate launches were consistency checks and are excluded from four-seed aggregates.
+All scientific results are fresh post-cutoff OpenResearch **Kubernetes** runs on **NVIDIA RTX PRO 6000 Blackwell Server Edition** GPUs. Each successful job used two GPUs for two concurrent seeds; peak concurrency was **16 GPUs** and the campaign’s actual end-to-end wall time was **0.1153 hours (6m55s)**. The fixed command below is copied verbatim from `orx exp status`. One shell-quoting scout failed before Python and contributes no evidence; accidental same-seed duplicate launches were consistency checks and are excluded from four-seed aggregates.
 
 | Branch / experiment | Purpose or change | Exact run command | Assessment / outcome | Compute |
 |---|---|---|---|---|

@@ -63,7 +63,7 @@ Likewise, stability voting did not make noisy decodes more consistent: mean top-
 
 ## Compute, provenance, and limitations
 
-All scientific evidence came from OpenResearch Kubernetes jobs on **NVIDIA RTX PRO 6000 Blackwell Server Edition** GPUs. Each job allocated two GPUs, peak concurrency was **16 GPUs**, and the fresh campaign took **0.13 wall hours** from first launch through final completion; successful training/evaluation payloads took about 7.5–8.1 seconds per two-seed job after container setup. One root scout failed before Python due to shell quoting and contributes no evidence.
+All scientific evidence came from OpenResearch Kubernetes jobs on **NVIDIA RTX PRO 6000 Blackwell Server Edition** GPUs. Each job allocated two GPUs, peak concurrency was **16 GPUs**, and the fresh campaign took **0.1153 wall hours (6m55s)** from first pod start through final completion; successful training/evaluation payloads took about 7.5–8.1 seconds per two-seed job after container setup. One root scout failed before Python due to shell quoting and contributes no evidence.
 
 The strongest limitations are scale, a reconstructed tokenizer/schedule, different filtering and splitting, no text semantics, and only four seeds. A faithful reproduction would use the authors’ exact filtered timepoint data, CAST training losses, LLaDA-8B/LoRA prompt construction, hard-negative preference loss, and five independent runs. The public [experiment branches](https://github.com/alphaXiv/diffusion-language-model-for-recommendation/branches) preserve every code change; the [self-contained notebook](../../notebooks/dlmrec_reproduction.py) exposes all measurements and calculations.
 
