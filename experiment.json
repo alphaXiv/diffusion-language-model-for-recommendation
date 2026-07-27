@@ -1,9 +1,9 @@
 {
-  "name": "full-masked-diffusion",
+  "name": "plain-diffusion-control",
   "model_type": "diffusion",
-  "collaborative_tokens": true,
-  "progressive_curriculum": true,
-  "stability_voting": true,
+  "collaborative_tokens": false,
+  "progressive_curriculum": false,
+  "stability_voting": false,
   "sampling_steps": 3,
   "seeds": [0, 1],
   "epochs": 14,
