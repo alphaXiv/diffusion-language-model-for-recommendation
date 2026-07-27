@@ -1,0 +1,21 @@
+{
+  "name": "autoregressive-control",
+  "model_type": "ar",
+  "collaborative_tokens": true,
+  "progressive_curriculum": false,
+  "stability_voting": false,
+  "sampling_steps": 1,
+  "seeds": [0, 1],
+  "epochs": 14,
+  "d_model": 128,
+  "n_layers": 2,
+  "n_heads": 4,
+  "context_length": 40,
+  "target_length": 3,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "eval_batch_size": 256,
+  "consistency_users": 1000,
+  "consistency_repeats": 3
+}

@@ -1,0 +1,23 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dlmrec-{{ORX_RUN}}
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: 39600
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: experiment
+          image: pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime
+          command: ["bash", "-c", "$ORX_SCRIPT"]
+          resources:
+            requests:
+              nvidia.com/gpu: "2"
+              cpu: "16"
+              memory: "64Gi"
+            limits:
+              nvidia.com/gpu: "2"
+              cpu: "16"
+              memory: "64Gi"
