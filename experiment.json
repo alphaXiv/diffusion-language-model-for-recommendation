@@ -5,7 +5,7 @@
   "progressive_curriculum": true,
   "stability_voting": false,
   "sampling_steps": 3,
-  "seeds": [0, 1],
+  "seeds": [2, 3],
   "epochs": 14,
   "d_model": 128,
   "n_layers": 2,
