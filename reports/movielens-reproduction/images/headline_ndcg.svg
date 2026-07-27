@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="470" viewBox="0 0 820 470" role="img">
+  <title>Headline NDCG at 10 comparison</title>
+  <desc>One-step masked denoising has mean NDCG 0.01528, full three-step diffusion 0.00846, and autoregression 0.00787 across four seeds.</desc>
+  <rect width="820" height="470" fill="#fbfaf7"/>
+  <text x="55" y="42" font-family="system-ui,sans-serif" font-size="24" font-weight="700" fill="#17222d">One denoising pass gives the clearest gain</text>
+  <text x="55" y="68" font-family="system-ui,sans-serif" font-size="14" fill="#52606d">MovieLens-1M, full-catalog NDCG@10; mean ± seed SD, n=4</text>
+  <line x1="95" y1="390" x2="770" y2="390" stroke="#9aa5b1"/>
+  <line x1="95" y1="100" x2="95" y2="390" stroke="#9aa5b1"/>
+  <g font-family="system-ui,sans-serif" font-size="12" fill="#687782">
+    <line x1="95" y1="318" x2="770" y2="318" stroke="#e1e5e8"/><text x="55" y="322">0.004</text>
+    <line x1="95" y1="245" x2="770" y2="245" stroke="#e1e5e8"/><text x="55" y="249">0.008</text>
+    <line x1="95" y1="173" x2="770" y2="173" stroke="#e1e5e8"/><text x="55" y="177">0.012</text>
+    <line x1="95" y1="100" x2="770" y2="100" stroke="#e1e5e8"/><text x="55" y="104">0.016</text>
+  </g>
+  <rect x="155" y="247" width="130" height="143" rx="4" fill="#778899"/>
+  <line x1="220" y1="235" x2="220" y2="259" stroke="#17222d" stroke-width="2"/><line x1="208" y1="235" x2="232" y2="235" stroke="#17222d"/><line x1="208" y1="259" x2="232" y2="259" stroke="#17222d"/>
+  <rect x="350" y="236" width="130" height="154" rx="4" fill="#3d7b8c"/>
+  <line x1="415" y1="211" x2="415" y2="261" stroke="#17222d" stroke-width="2"/><line x1="403" y1="211" x2="427" y2="211" stroke="#17222d"/><line x1="403" y1="261" x2="427" y2="261" stroke="#17222d"/>
+  <rect x="545" y="112" width="130" height="278" rx="4" fill="#e87547"/>
+  <line x1="610" y1="100" x2="610" y2="163" stroke="#17222d" stroke-width="2"/><line x1="598" y1="100" x2="622" y2="100" stroke="#17222d"/><line x1="598" y1="163" x2="622" y2="163" stroke="#17222d"/>
+  <g font-family="system-ui,sans-serif" text-anchor="middle">
+    <text x="220" y="235" font-size="16" font-weight="700" fill="#17222d">0.00787</text>
+    <text x="415" y="199" font-size="16" font-weight="700" fill="#17222d">0.00846</text>
+    <text x="610" y="91" font-size="16" font-weight="700" fill="#17222d">0.01528</text>
+    <text x="220" y="420" font-size="14" fill="#17222d">Autoregressive</text>
+    <text x="415" y="420" font-size="14" fill="#17222d">3-step diffusion</text>
+    <text x="610" y="420" font-size="14" fill="#17222d">1-step diffusion</text>
+    <text x="610" y="446" font-size="13" font-weight="700" fill="#c1512c">+94.2% vs AR</text>
+  </g>
+</svg>
