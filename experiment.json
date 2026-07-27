@@ -1,7 +1,7 @@
 {
-  "name": "full-masked-diffusion",
+  "name": "no-collaborative-tokens",
   "model_type": "diffusion",
-  "collaborative_tokens": true,
+  "collaborative_tokens": false,
   "progressive_curriculum": true,
   "stability_voting": true,
   "sampling_steps": 3,
